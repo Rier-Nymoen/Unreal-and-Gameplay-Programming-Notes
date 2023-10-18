@@ -1,16 +1,40 @@
 # Unreal-and-Gameplay-Programming-Notes
-A place to jot down knowledge I've gained
+A place to jot down knowledge I've gained. I try my best to quote and give credit to people I've learned from who helped "make it (something) click"
 
 Will improve formatting as I get a feel for organizational issues.
 
 ## Contents
-- [Gameplay Programming Tips](#gameplayprogrammingtips)
+@TODO update links with aliases to improve style and formatting
 - [C++ Specific](#cpp)
+- [Gameplay Programming Tips](#gameplayprogrammingtips)
 - [Premature Optimization](#prematureoptimization)
 - [Math](#math)
+- [Unreal Engine](#unrealengine)
+
+
 
 # cpp
-- It is generally unsafe to do a range-based forloop ``` for(Type something : Container) ``` over a container and remove from that container. Use an iterator instead.
+- It is generally unsafe to do a range-based forloop ``` for(Type something : Container) ``` over a container and remove from that container without getting a new iterator. In C++ STL container ```container.erase()``` methods return a new iterator.  Bad Example:
+
+
+
+```
+for(auto iter = container.begin(); iter !=  container.end(); ++iter)
+{
+    container.erase(iter);
+}
+```
+
+Correct Example:
+```
+for(auto iter = container.begin(); iter !=  container.end(); ++iter)
+{
+    iter = container.erase(iter);
+}
+```
+
+ 
+ TODO: ( add link to Unreal Engine Iterator Implementation)
 
 # GameplayProgrammingTips
 
@@ -36,3 +60,10 @@ When trying to understand quaternions, I found these resources helpful. (especia
 - https://danceswithcode.net/engineeringnotes/quaternions/quaternions.html
 - https://eater.net/quaternions
 - Series by Jorge Rodriguez on math for game development, videos related to quaternion and axis-angle representation https://www.youtube.com/watch?v=dttFiVn0rvc
+
+
+
+# UnrealEngine
+
+## Iterators
+- (As far as I have learned) In UE, you aren't given a new iterator. Because TArray (which is the underlying datastructure for a lot of containers) ". . . stores an index, not a pointer, it won't be invalidated by reallocations" - Laura from the (Unreal Slackers/Unreal Source discord).
