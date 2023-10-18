@@ -18,7 +18,7 @@ Will improve formatting as I get a feel for organizational issues.
 
 
 
-```
+```cpp
 for(auto iter = container.begin(); iter !=  container.end(); ++iter)
 {
     container.erase(iter);
@@ -26,7 +26,7 @@ for(auto iter = container.begin(); iter !=  container.end(); ++iter)
 ```
 
 Correct Example:
-```
+```cpp
 for(auto iter = container.begin(); iter !=  container.end(); ++iter)
 {
     iter = container.erase(iter);
