@@ -16,6 +16,8 @@ Will improve formatting as I get a feel for organizational issues.
 # cpp
 - It is generally unsafe to do a range-based forloop ``` for(Type something : Container) ``` over a container and remove from that container without getting a new iterator. In C++ STL container ```container.erase()``` methods return a new iterator.  Bad Example:
 
+- Handles: Not the data itself, but a way to get to the data.
+
 
 
 ```cpp
