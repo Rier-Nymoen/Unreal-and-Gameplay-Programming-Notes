@@ -16,9 +16,6 @@ Will improve formatting as I get a feel for organizational issues.
 # cpp
 - It is generally unsafe to do a range-based forloop ``` for(Type something : Container) ``` over a container and remove from that container without getting a new iterator. In C++ STL container ```container.erase()``` methods return a new iterator.  Bad Example:
 
-- Handles: Not the data itself, but a way to get to the data.
-
-
 
 ```cpp
 for(auto iter = container.begin(); iter !=  container.end(); ++iter)
@@ -35,7 +32,8 @@ for(auto iter = container.begin(); iter !=  container.end(); ++iter)
 }
 ```
 
- 
+- Handles: Not the data itself, but a way to get to the data.
+- TODO: Statics - aka static helper functions 
  TODO: ( add link to Unreal Engine Iterator Implementation)
 
 # GameplayProgrammingTips
