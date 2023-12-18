@@ -13,6 +13,11 @@ Will improve formatting as I get a feel for organizational issues.
 
 
 
+# Programming Lingo
+- Sometimes, you'll see variables that have the word ```Context``` in them. This is defined as:  all the relevant information that a developer needs to complete a task.
+
+
+
 # cpp
 - It is generally unsafe to do a range-based forloop ``` for(Type something : Container) ``` over a container and remove from that container without getting a new iterator. In C++ STL container ```container.erase()``` methods return a new iterator.  Bad Example:
 
