@@ -41,6 +41,8 @@ for(auto iter = container.begin(); iter !=  container.end(); ++iter)
 - TODO: Statics - aka static helper functions 
  TODO: ( add link to Unreal Engine Iterator Implementation)
 
+-Dynamic delegate parameters MUST support reflection.
+
 # GameplayProgrammingTips
 
 ## Input
