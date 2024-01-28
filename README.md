@@ -68,6 +68,10 @@ When trying to understand quaternions, I found these resources helpful. (especia
 - https://eater.net/quaternions
 - Series by Jorge Rodriguez on math for game development, videos related to quaternion and axis-angle representation https://www.youtube.com/watch?v=dttFiVn0rvc
 
+## Plane Equations:
+
+Amazing resource for understanding why the equation for planes describes the plane.
+https://www.youtube.com/watch?v=HjJ140TYbXQ
 
 
 # UnrealEngine
