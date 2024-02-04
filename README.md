@@ -75,6 +75,10 @@ https://www.youtube.com/watch?v=HjJ140TYbXQ
 
 
 # UnrealEngine
+- Use smart pointers for non-uobjects to make memory management easier.
+
+- https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/ProgrammingWithCPP/UnrealArchitecture/SmartPointerLibrary/
+
 
 ## Iterators
 - (As far as I have learned) In UE, you aren't given a new iterator. Because TArray (which is the underlying datastructure for a lot of containers) ". . . stores an index, not a pointer, it won't be invalidated by reallocations" - Laura from the (Unreal Slackers/Unreal Source discord).
