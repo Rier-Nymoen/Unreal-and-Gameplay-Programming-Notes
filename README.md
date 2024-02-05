@@ -88,4 +88,4 @@ https://www.youtube.com/watch?v=HjJ140TYbXQ
 ### System Architecture
 - The UCharacterMovementComponent::TickComponent function is called every frame. This function calls ControlledCharacterMove().
 - Inside UCharacterMovementComponent::ControlledCharacterMove(), if the CharacterOwner is has the Authority role, PerformMovement() is called. In Autonomous Proxy, ReplicateMoveToServer() is called.
-- 
+- PerformMovement calls StartNewPhysics(). When StartNewPhysics() returns, UpdateCharacterStateAfterMovement is called.
