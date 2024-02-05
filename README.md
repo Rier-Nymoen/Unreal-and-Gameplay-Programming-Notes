@@ -37,11 +37,17 @@ for(auto iter = container.begin(); iter !=  container.end(); ++iter)
 }
 ```
 
+
+
 - Handles: Not the data itself, but a way to get to the data.
 - TODO: Statics - aka static helper functions 
  TODO: ( add link to Unreal Engine Iterator Implementation)
 
 -Dynamic delegate parameters MUST support reflection.
+
+#VisualStudioShortcuts
+
+"ctrl + minus" - navigates backwards in visual studio. Useful for searching definitions briefly and getting back to where you were writing code.
 
 # GameplayProgrammingTips
 
