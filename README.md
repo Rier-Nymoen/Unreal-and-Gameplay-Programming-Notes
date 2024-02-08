@@ -95,3 +95,4 @@ https://www.youtube.com/watch?v=HjJ140TYbXQ
 - The UCharacterMovementComponent::TickComponent function is called every frame. This function calls ControlledCharacterMove().
 - Inside UCharacterMovementComponent::ControlledCharacterMove(), if the CharacterOwner is has the Authority role, PerformMovement() is called. In Autonomous Proxy, ReplicateMoveToServer() is called.
 - PerformMovement calls StartNewPhysics(). When StartNewPhysics() returns, UpdateCharacterStateAfterMovement is called.
+-  UCharacterMovementComponent::ControlledCharacterMove() calls ACharacter::CheckJumpInput() which given the necessary conditions calls UCharacterMovementComponent::DoJump()
