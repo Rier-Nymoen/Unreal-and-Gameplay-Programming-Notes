@@ -103,6 +103,7 @@ https://www.youtube.com/watch?v=HjJ140TYbXQ
 
 - Receive Activation when a branch is entered.
 
+
 ## AI Perception Component
 How data is received from the environment.
 
