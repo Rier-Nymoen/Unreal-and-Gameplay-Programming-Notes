@@ -97,11 +97,13 @@ https://www.youtube.com/watch?v=HjJ140TYbXQ
 - PerformMovement calls StartNewPhysics(). When StartNewPhysics() returns, UpdateCharacterStateAfterMovement is called.
 -  UCharacterMovementComponent::ControlledCharacterMove() calls ACharacter::CheckJumpInput() which given the necessary conditions calls UCharacterMovementComponent::DoJump()
 
-## AI
+## AI Perception Component
+
+
 
 ## AI EQS
 
-## EQS Generator
+### EQS Generator
 A generator produces "items" (locations or actors) that can be tested for various conditions and scored.
 
 ### EQS Context
