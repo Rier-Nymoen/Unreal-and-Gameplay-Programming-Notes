@@ -98,10 +98,12 @@ https://www.youtube.com/watch?v=HjJ140TYbXQ
 -  UCharacterMovementComponent::ControlledCharacterMove() calls ACharacter::CheckJumpInput() which given the necessary conditions calls UCharacterMovementComponent::DoJump()
 
 ## AI Perception Component
+How data is received from the environment.
 
 
 
 ## AI EQS
+Asks questions about the environment.
 
 ### EQS Generator
 A generator produces "items" (locations or actors) that can be tested for various conditions and scored.
