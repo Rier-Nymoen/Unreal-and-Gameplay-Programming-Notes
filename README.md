@@ -97,6 +97,12 @@ https://www.youtube.com/watch?v=HjJ140TYbXQ
 - PerformMovement calls StartNewPhysics(). When StartNewPhysics() returns, UpdateCharacterStateAfterMovement is called.
 -  UCharacterMovementComponent::ControlledCharacterMove() calls ACharacter::CheckJumpInput() which given the necessary conditions calls UCharacterMovementComponent::DoJump()
 
+
+## AI Behavior Trees
+- BTServices - for things that happen at an interval. Best used at the start or end of branches.
+
+- Receive Activation when a branch is entered.
+
 ## AI Perception Component
 How data is received from the environment.
 
