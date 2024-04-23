@@ -96,3 +96,16 @@ https://www.youtube.com/watch?v=HjJ140TYbXQ
 - Inside UCharacterMovementComponent::ControlledCharacterMove(), if the CharacterOwner is has the Authority role, PerformMovement() is called. In Autonomous Proxy, ReplicateMoveToServer() is called.
 - PerformMovement calls StartNewPhysics(). When StartNewPhysics() returns, UpdateCharacterStateAfterMovement is called.
 -  UCharacterMovementComponent::ControlledCharacterMove() calls ACharacter::CheckJumpInput() which given the necessary conditions calls UCharacterMovementComponent::DoJump()
+
+## AI
+
+## AI EQS
+
+## EQS Generator
+A generator produces "items" (locations or actors) that can be tested for various conditions and scored.
+
+### EQS Context
+EQS Contexts act as a frame of reference for EQS Tests and Generators. A basic example of a context is a querier, where a generator can use the pawn querier to generate points around it. A context can even give multiple locations for which a generator would generate items for each context.
+
+
+
