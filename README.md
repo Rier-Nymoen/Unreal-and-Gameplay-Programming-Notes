@@ -114,7 +114,7 @@ How data is received from the environment.
 
 https://dev.epicgames.com/documentation/en-us/unreal-engine/ai-perception-in-unreal-engine
 
-## AI Environmnet Query System (EQS)
+## AI Environment Query System (EQS)
 The Environment Query System is for asking questions about the environment.
 
 ### EQS Generator
