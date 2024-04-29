@@ -104,7 +104,7 @@ UGameplayCueNotify - can be called from GameplayEffects. GameplayCues are automa
 
 
 ## AI Behavior Trees
-- BTServices - for things that happen at an interval, and updating the blackboard. Best used at the start or end of branches.
+- BTServices - for things that happen at an interval, and updating the blackboard for information required at lower nodes. Best used at the start or end of branches.
 
 - Receive Activation when a branch is entered.
 
