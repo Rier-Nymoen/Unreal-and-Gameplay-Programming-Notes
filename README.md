@@ -108,6 +108,9 @@ UGameplayCueNotify - can be called from GameplayEffects. GameplayCues are automa
 
 - Receive Activation when a branch is entered.
 
+- Nodes - nodes have to be specified whether they create speciifc instances or not. This allows for agent-specific data to be safe to store.
+- https://docs.unrealengine.com/4.27/en-US/InteractiveExperiences/ArtificialIntelligence/BehaviorTrees/BehaviorTreeNodeReference/
+
 
 ## AI Perception Component
 How data is received from the environment.
