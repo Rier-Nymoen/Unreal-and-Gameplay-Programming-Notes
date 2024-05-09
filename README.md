@@ -107,7 +107,13 @@ UGameplayCueNotify - can be called from GameplayEffects. GameplayCues are automa
 - BTServices - for things that happen at an interval, and updating the blackboard for information required at lower nodes. Best used at the start or end of branches.
 
 - Receive Activation when a branch is entered.
+
+
+https://forums.unrealengine.com/t/bttask-nodememory/307078/2
+
 Behavior Tree Nodes (referred to here as "nodes") exist as shared objects, meaning that all agents using the same Behavior Tree will share a single set of node instances. This improves CPU performance while reducing memory usage, but also prevents nodes from storing agent-specific data. However, for cases where agents need to store and update information related to a node, UE4 provides three solutions:
+
+
 - Nodes - nodes have to be specified whether they create speciifc instances or not. This allows for agent-specific data to be safe to store.
 - https://docs.unrealengine.com/4.27/en-US/InteractiveExperiences/ArtificialIntelligence/BehaviorTrees/BehaviorTreeNodeReference/
 
