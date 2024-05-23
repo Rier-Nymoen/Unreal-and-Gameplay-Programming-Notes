@@ -45,11 +45,17 @@ for(auto iter = container.begin(); iter !=  container.end(); ++iter)
 
 -Dynamic delegate parameters MUST support reflection.
 
-#VisualStudioShortcuts
+# VisualStudioShortcuts
 
-"ctrl + minus" - navigates backwards in visual studio. Useful for searching definitions briefly and getting back to where you were writing code.
+- "ctrl + minus" - navigates backwards in visual studio. Useful for searching definitions briefly and getting back to where you were writing code.
+- "ctrl + k + o" - switches between .cpp or .h file
+- "ctrl + j" - can list members or display member information.
 
 # GameplayProgrammingTips
+
+## UI
+- General consensus is that game logic should never know about UI. The UI should  either subscribe itself to certain events, or tick (poll) (performance allowing).
+- UI should only hold state specifically for itself.
 
 ## Input
 
