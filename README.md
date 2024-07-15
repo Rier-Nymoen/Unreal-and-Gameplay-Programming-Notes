@@ -147,3 +147,7 @@ You can use the ```Replicated``` UPROPERTY specifier to mark variables for repli
 ## RPCS
 Client to server, Server to client. Primarily for unreliable gameplay events.
 
+# Game State, Game Modes, and Player State
+
+
+
