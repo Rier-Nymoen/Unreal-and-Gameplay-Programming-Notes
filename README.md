@@ -142,6 +142,7 @@ EQS Contexts act as a frame of reference for EQS Tests and Generators. A basic e
 ## Replication
 - Only server to client 
 - Anytime a replicated variable's value change, a good pattern is to call its OnRep_...() so the server can get the call.
+- Best used for anything involving state.
 
 
 You can use the ```Replicated``` UPROPERTY specifier to mark variables for replication. If you use the ```ReplicatedUsing``` specifier, this allows you to setup a **RepNotify** which is a function that is called when replicated information is received.
