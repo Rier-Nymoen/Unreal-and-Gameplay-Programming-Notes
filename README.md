@@ -139,6 +139,8 @@ A generator produces "items" (locations or actors) that can be tested for variou
 EQS Contexts act as a frame of reference for EQS Tests and Generators. A basic example of a context is a querier, where a generator can use the pawn querier to generate points around it. A context can even give multiple locations for which a generator would generate items for each context.
 
 # Multiplayer / Networking
+- Add resources for "Lag compensation" Networking techniques.
+
 ## Replication
 - Only server to client 
 - Anytime a replicated variable's value change, a good pattern is to call its OnRep_...() so the server can get the call.
@@ -154,7 +156,6 @@ You can use the ```Replicated``` UPROPERTY specifier to mark variables for repli
 
 ## RPCS
 Client to server, Server to client. Primarily for unreliable gameplay events.
-
 # Game State, Game Modes, and Player State
 
 
