@@ -158,5 +158,8 @@ You can use the ```Replicated``` UPROPERTY specifier to mark variables for repli
 Client to server, Server to client. Primarily for unreliable gameplay events.
 # Game State, Game Modes, and Player State
 
-
+## Game Mode
+Defines the ruleset of your game.
+- Only available on the server.
+- 
 
