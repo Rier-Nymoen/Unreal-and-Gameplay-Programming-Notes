@@ -160,6 +160,6 @@ Client to server, Server to client. Primarily for unreliable gameplay events.
 
 ## Game Mode
 Defines the ruleset of your game.
-- Only available on the server.
+- Only exists on the server.
 - 
 
