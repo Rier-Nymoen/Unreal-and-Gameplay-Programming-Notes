@@ -87,6 +87,10 @@ https://www.youtube.com/watch?v=HjJ140TYbXQ
 
 
 # UnrealEngine
+
+## Editor Settings
+- Change the default input scaling (not mouse sensitivity). Its terrible.
+
 ## MemoryManagement-SmartPointers
 - Use smart pointers for non-uobjects to make memory management easier.
 
