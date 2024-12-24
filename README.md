@@ -39,8 +39,6 @@ for(auto iter = container.begin(); iter !=  container.end(); ++iter)
 
  TODO: ( add link to Unreal Engine Iterator Implementation)
 
--Dynamic delegate parameters MUST support reflection.
-
 # Programming Lingo
 ### Terminology
 - ```Context``` - is defined as: all the relevant information that a developer needs to complete a task.
@@ -90,8 +88,12 @@ UGameplayCueNotify - can be called from GameplayEffects. GameplayCues are automa
 ## Types
 ### Iterators
 - (As far as I have learned) In UE, you aren't given a new iterator. Because TArray (which is the underlying datastructure for a lot of containers) ". . . stores an index, not a pointer, it won't be invalidated by reallocations" - Laura from the (Unreal Slackers/Unreal Source discord).
-### MemoryManagement-SmartPointers
+### Smart Pointers - Memory Management
 - Use smart pointers for non-uobjects to make memory management easier. https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/ProgrammingWithCPP/UnrealArchitecture/SmartPointerLibrary/
+
+### Dynamic Delegate Paremeters
+-Dynamic delegate parameters MUST support reflection.
+
 
 ## CharacterMovementComponent
 ### System Architecture
