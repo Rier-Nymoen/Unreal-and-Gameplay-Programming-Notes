@@ -1,7 +1,7 @@
 # Unreal-and-Gameplay-Programming-Notes
 My personal notes for C++ Programming, Unreal, Etc.
 
-**Formatting and Content is work-in-progress **
+** Formatting and Content is work-in-progress **
 
 
 
