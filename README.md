@@ -51,7 +51,7 @@ for(auto iter = container.begin(); iter !=  container.end(); ++iter)
 - ```Statics``` - static helper functions.
 - ```Handles``` not the data itself, but a way to get the data.
 
-# GameplayProgrammingGoodPractices
+# Useful Practices/Things to Consider
 
 ## UI
 - General consensus is that game logic should never know about UI. The UI should  either subscribe itself to certain events, or tick (poll) (performance allowing).
