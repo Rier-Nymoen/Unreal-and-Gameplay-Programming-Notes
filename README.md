@@ -19,6 +19,7 @@ Will improve formatting as I get a feel for organizational issues.
 - ```Statics``` - static helper functions.
 - ```Handles``` not the data itself, but a way to get the data.
 # cpp
+### Iterators
 - It is generally unsafe to do a range-based forloop ``` for(Type something : Container) ``` over a container and remove from that container without getting a new iterator. In C++ STL container ```container.erase()``` methods return a new iterator.  Bad Example:
 
 - implicit function deletion.
