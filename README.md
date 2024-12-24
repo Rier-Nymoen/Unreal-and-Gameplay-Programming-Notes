@@ -78,7 +78,7 @@ https://www.youtube.com/watch?v=HjJ140TYbXQ
 
 # UnrealEngine
 
-## Editor Settings
+### Editor Settings
 - **Input Scaling** - By default input scaling is turned on (not mouse sensitivity). It can make you question your own math if you don't know about it.
 
 ## GameplayAbilitySystem
