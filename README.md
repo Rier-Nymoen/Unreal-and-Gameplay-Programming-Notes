@@ -1,7 +1,7 @@
 # Unreal-and-Gameplay-Programming-Notes
-**A place to jot down knowledge I've gained. I try my best to quote and give credit to people I've learned from who helped "make it click".** </br> 
+My personal notes
 
-**Will improve formatting as I get a feel for organizational issues.**
+**Formatting and Content is work-in-progress **
 
 
 
