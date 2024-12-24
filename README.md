@@ -41,13 +41,13 @@ for(auto iter = container.begin(); iter !=  container.end(); ++iter)
 
 -Dynamic delegate parameters MUST support reflection.
 
-# VisualStudioShortcuts
-
+# VisualStudio
+### shortcuts
 - "ctrl + minus" - navigates backwards in visual studio. Useful for searching definitions briefly and getting back to where you were writing code.
 - "ctrl + k + o" - switches between .cpp or .h file
 - "ctrl + j" - can list members or display member information.
 
-# GameplayProgrammingTips
+# GameplayProgrammingGoodPractices
 
 ## UI
 - General consensus is that game logic should never know about UI. The UI should  either subscribe itself to certain events, or tick (poll) (performance allowing).
@@ -65,14 +65,14 @@ for(auto iter = container.begin(); iter !=  container.end(); ++iter)
   - How can it be fixed?
 # math
 
-## Quaternions
+### Quaternions
 
 When trying to understand quaternions, I found these resources helpful. (especially understanding them from the math point of view, and a programmer point of view)
 - https://danceswithcode.net/engineeringnotes/quaternions/quaternions.html
 - https://eater.net/quaternions
 - Series by Jorge Rodriguez on math for game development, videos related to quaternion and axis-angle representation https://www.youtube.com/watch?v=dttFiVn0rvc
 
-## Plane Equations:
+### Plane Equations:
 Amazing resource for understanding why the equation for planes describes the plane.
 https://www.youtube.com/watch?v=HjJ140TYbXQ
 
