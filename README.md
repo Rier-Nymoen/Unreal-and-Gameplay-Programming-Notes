@@ -92,7 +92,8 @@ https://www.youtube.com/watch?v=HjJ140TYbXQ
 
 UGameplayCueNotify - can be called from GameplayEffects. GameplayCues are automatically subscribed to the event system based on their member variable: ```GameplayCueTag```. 
 
-## Iterators
+## Types
+### Iterators
 - (As far as I have learned) In UE, you aren't given a new iterator. Because TArray (which is the underlying datastructure for a lot of containers) ". . . stores an index, not a pointer, it won't be invalidated by reallocations" - Laura from the (Unreal Slackers/Unreal Source discord).
 
 ## CharacterMovementComponent
