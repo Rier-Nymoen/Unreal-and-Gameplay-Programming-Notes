@@ -49,14 +49,14 @@ for(auto iter = container.begin(); iter !=  container.end(); ++iter)
 
 # Useful Practices/Things to Consider
 
-## UI
+### UI
 - General consensus is that game logic should never know about UI. The UI should  either subscribe itself to certain events, or tick (poll) (performance allowing).
 - UI should only hold state specifically for itself.
 
-## Input
+### Input
 - Let objects manage the binding and unbinding of their own input for encapsulation.
   
-## PrematureOptimization
+### Premature Optimization
 - Premature Optimization is the root of all evil.
 - Keep your code readable, micro performance optimizations don't matter.
 - "Don't blindly optimize, figure out the **What, Why and How**" - Ari Arnbjörnsson in: Maximizing Your Game's Performance in Unreal Engine | Unreal Fest 2022
