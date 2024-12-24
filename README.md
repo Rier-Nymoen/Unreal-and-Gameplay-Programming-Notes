@@ -3,6 +3,8 @@
 
 **Will improve formatting as I get a feel for organizational issues.**
 
+
+
 ## Contents
 @TODO update links with aliases to improve style and formatting
 - [C++ Specific](#cpp)
@@ -11,13 +13,14 @@
 - [Math](#math)
 - [Unreal Engine](#unrealengine)
 
+# VisualStudio
+### Shortcuts
+- "ctrl + minus" - navigates backwards in visual studio. Useful for searching definitions briefly and getting back to where you were writing code.
+- "ctrl + k + o" - switches between .cpp or .h file
+- "ctrl + j" - can list members or display member information.
+- 
 
 
-# Programming Lingo
-### Terminology
-- ```Context``` - is defined as: all the relevant information that a developer needs to complete a task.
-- ```Statics``` - static helper functions.
-- ```Handles``` not the data itself, but a way to get the data.
 # C++
 ### Iterators
 - It is generally unsafe to do a range-based forloop ``` for(Type something : Container) ``` over a container and remove from that container without getting a new iterator. In C++ STL container ```container.erase()``` methods return a new iterator.  Bad Example:
@@ -42,11 +45,11 @@ for(auto iter = container.begin(); iter !=  container.end(); ++iter)
 
 -Dynamic delegate parameters MUST support reflection.
 
-# VisualStudio
-### Shortcuts
-- "ctrl + minus" - navigates backwards in visual studio. Useful for searching definitions briefly and getting back to where you were writing code.
-- "ctrl + k + o" - switches between .cpp or .h file
-- "ctrl + j" - can list members or display member information.
+# Programming Lingo
+### Terminology
+- ```Context``` - is defined as: all the relevant information that a developer needs to complete a task.
+- ```Statics``` - static helper functions.
+- ```Handles``` not the data itself, but a way to get the data.
 
 # GameplayProgrammingGoodPractices
 
@@ -64,7 +67,7 @@ for(auto iter = container.begin(); iter !=  container.end(); ++iter)
   - Whats slow?
   - Why is it slow?
   - How can it be fixed?
-# math
+# Math
 
 ### Quaternions
 
@@ -100,6 +103,8 @@ UGameplayCueNotify - can be called from GameplayEffects. GameplayCues are automa
 - Inside UCharacterMovementComponent::ControlledCharacterMove(), if the CharacterOwner is has the Authority role, PerformMovement() is called. In Autonomous Proxy, ReplicateMoveToServer() is called.
 - PerformMovement calls StartNewPhysics(). When StartNewPhysics() returns, UpdateCharacterStateAfterMovement is called.
 -  UCharacterMovementComponent::ControlledCharacterMove() calls ACharacter::CheckJumpInput() which given the necessary conditions calls UCharacterMovementComponent::DoJump()
+
+# AI
 
 ## AI Behavior Trees
 - BTServices - for things that happen at an interval, and updating the blackboard for information required at lower nodes. Best used at the start or end of branches.
@@ -146,3 +151,5 @@ Client to server, Server to client. Primarily for unreliable gameplay events.
 ## Game Mode
 Defines the ruleset of your game.
 - Only exists on the server.
+
+
