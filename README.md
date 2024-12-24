@@ -14,10 +14,9 @@ Will improve formatting as I get a feel for organizational issues.
 
 
 # Programming Lingo
-- Sometimes, you'll see variables that have the word ```Context``` in them. This is defined as:  all the relevant information that a developer needs to complete a task.
-
-
-
+- ```Context``` - is defined as: all the relevant information that a developer needs to complete a task.
+- ```Statics``` - static helper functions.
+- ```Handles``` not the data itself, but a way to get the data.
 # cpp
 - It is generally unsafe to do a range-based forloop ``` for(Type something : Container) ``` over a container and remove from that container without getting a new iterator. In C++ STL container ```container.erase()``` methods return a new iterator.  Bad Example:
 
@@ -37,10 +36,6 @@ for(auto iter = container.begin(); iter !=  container.end(); ++iter)
 }
 ```
 
-
-
-- Handles: Not the data itself, but a way to get to the data.
-- TODO: Statics - aka static helper functions 
  TODO: ( add link to Unreal Engine Iterator Implementation)
 
 -Dynamic delegate parameters MUST support reflection.
@@ -58,7 +53,6 @@ for(auto iter = container.begin(); iter !=  container.end(); ++iter)
 - UI should only hold state specifically for itself.
 
 ## Input
-
 - Let objects manage the binding and unbinding of their own input for encapsulation.
   
 # PrematureOptimization
@@ -68,9 +62,6 @@ for(auto iter = container.begin(); iter !=  container.end(); ++iter)
   - Whats slow?
   - Why is it slow?
   - How can it be fixed?
- 
-
-
 # math
 
 ## Quaternions
@@ -81,26 +72,22 @@ When trying to understand quaternions, I found these resources helpful. (especia
 - Series by Jorge Rodriguez on math for game development, videos related to quaternion and axis-angle representation https://www.youtube.com/watch?v=dttFiVn0rvc
 
 ## Plane Equations:
-
 Amazing resource for understanding why the equation for planes describes the plane.
 https://www.youtube.com/watch?v=HjJ140TYbXQ
-
 
 # UnrealEngine
 
 ## Editor Settings
-- Change the default input scaling (not mouse sensitivity). Its terrible.
+- **Input Scaling** - By default input scaling is turned on (not mouse sensitivity). It can make you question your own math if you don't know about it.
 
 ## MemoryManagement-SmartPointers
-- Use smart pointers for non-uobjects to make memory management easier.
-
-- https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/ProgrammingWithCPP/UnrealArchitecture/SmartPointerLibrary/
+- Use smart pointers for non-uobjects to make memory management easier. https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/ProgrammingWithCPP/UnrealArchitecture/SmartPointerLibrary/
 
 ## GameplayAbilitySystem
 
 ### Gameplay Cues
 
-UGameplayCueNotify - can be called from GameplayEffects. GameplayCues are automatically subscribed to the event system based on their  member variable: ```GameplayCueTag```. 
+UGameplayCueNotify - can be called from GameplayEffects. GameplayCues are automatically subscribed to the event system based on their member variable: ```GameplayCueTag```. 
 
 ## Iterators
 - (As far as I have learned) In UE, you aren't given a new iterator. Because TArray (which is the underlying datastructure for a lot of containers) ". . . stores an index, not a pointer, it won't be invalidated by reallocations" - Laura from the (Unreal Slackers/Unreal Source discord).
@@ -112,21 +99,16 @@ UGameplayCueNotify - can be called from GameplayEffects. GameplayCues are automa
 - PerformMovement calls StartNewPhysics(). When StartNewPhysics() returns, UpdateCharacterStateAfterMovement is called.
 -  UCharacterMovementComponent::ControlledCharacterMove() calls ACharacter::CheckJumpInput() which given the necessary conditions calls UCharacterMovementComponent::DoJump()
 
-
 ## AI Behavior Trees
 - BTServices - for things that happen at an interval, and updating the blackboard for information required at lower nodes. Best used at the start or end of branches.
 
 - Receive Activation when a branch is entered.
-
-
 https://forums.unrealengine.com/t/bttask-nodememory/307078/2
 
 Behavior Tree Nodes (referred to here as "nodes") exist as shared objects, meaning that all agents using the same Behavior Tree will share a single set of node instances. This improves CPU performance while reducing memory usage, but also prevents nodes from storing agent-specific data. However, for cases where agents need to store and update information related to a node, UE4 provides three solutions:
 
-
 - Nodes - nodes have to be specified whether they create speciifc instances or not. This allows for agent-specific data to be safe to store.
 - https://docs.unrealengine.com/4.27/en-US/InteractiveExperiences/ArtificialIntelligence/BehaviorTrees/BehaviorTreeNodeReference/
-
 
 ## AI Perception Component
 How data is received from the environment.
@@ -150,13 +132,10 @@ EQS Contexts act as a frame of reference for EQS Tests and Generators. A basic e
 - Anytime a replicated variable's value change, a good pattern is to call its OnRep_...() so the server can get the call.
 - Best used for anything involving state.
 
-
 You can use the ```Replicated``` UPROPERTY specifier to mark variables for replication. If you use the ```ReplicatedUsing``` specifier, this allows you to setup a **RepNotify** which is a function that is called when replicated information is received.
 
 ## Net Debugging
 - add UnrealEditor-Engine!GPlayInEditorContextString to watch to see if code is executing on server or client.
-
-
 
 ## RPCS
 Client to server, Server to client. Primarily for unreliable gameplay events.
@@ -165,5 +144,3 @@ Client to server, Server to client. Primarily for unreliable gameplay events.
 ## Game Mode
 Defines the ruleset of your game.
 - Only exists on the server.
-- 
-
