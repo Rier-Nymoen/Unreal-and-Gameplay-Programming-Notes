@@ -102,9 +102,9 @@ UGameplayCueNotify - can be called from GameplayEffects. GameplayCues are automa
 - PerformMovement calls StartNewPhysics(). When StartNewPhysics() returns, UpdateCharacterStateAfterMovement is called.
 -  UCharacterMovementComponent::ControlledCharacterMove() calls ACharacter::CheckJumpInput() which given the necessary conditions calls UCharacterMovementComponent::DoJump()
 
-# AI
+## AI
 
-## AI Behavior Trees
+### AI Behavior Trees
 - BTServices - for things that happen at an interval, and updating the blackboard for information required at lower nodes. Best used at the start or end of branches.
 
 - Receive Activation when a branch is entered.
@@ -115,12 +115,12 @@ Behavior Tree Nodes (referred to here as "nodes") exist as shared objects, meani
 - Nodes - nodes have to be specified whether they create speciifc instances or not. This allows for agent-specific data to be safe to store.
 - https://docs.unrealengine.com/4.27/en-US/InteractiveExperiences/ArtificialIntelligence/BehaviorTrees/BehaviorTreeNodeReference/
 
-## AI Perception Component
+### AI Perception Component
 How data is received from the environment.
 
 https://dev.epicgames.com/documentation/en-us/unreal-engine/ai-perception-in-unreal-engine
 
-## AI Environment Query System (EQS)
+### AI Environment Query System (EQS)
 The Environment Query System is for asking questions about the environment.
 
 ### EQS Generator
