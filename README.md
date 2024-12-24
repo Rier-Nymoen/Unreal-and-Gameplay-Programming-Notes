@@ -83,9 +83,6 @@ https://www.youtube.com/watch?v=HjJ140TYbXQ
 ## Editor Settings
 - **Input Scaling** - By default input scaling is turned on (not mouse sensitivity). It can make you question your own math if you don't know about it.
 
-## MemoryManagement-SmartPointers
-- Use smart pointers for non-uobjects to make memory management easier. https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/ProgrammingWithCPP/UnrealArchitecture/SmartPointerLibrary/
-
 ## GameplayAbilitySystem
 
 ### Gameplay Cues
@@ -95,6 +92,8 @@ UGameplayCueNotify - can be called from GameplayEffects. GameplayCues are automa
 ## Types
 ### Iterators
 - (As far as I have learned) In UE, you aren't given a new iterator. Because TArray (which is the underlying datastructure for a lot of containers) ". . . stores an index, not a pointer, it won't be invalidated by reallocations" - Laura from the (Unreal Slackers/Unreal Source discord).
+### MemoryManagement-SmartPointers
+- Use smart pointers for non-uobjects to make memory management easier. https://docs.unrealengine.com/4.26/en-US/ProgrammingAndScripting/ProgrammingWithCPP/UnrealArchitecture/SmartPointerLibrary/
 
 ## CharacterMovementComponent
 ### System Architecture
