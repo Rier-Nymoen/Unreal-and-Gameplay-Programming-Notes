@@ -15,11 +15,9 @@
 
 # VisualStudio
 ### Shortcuts
-- "ctrl + minus" - navigates backwards in visual studio. Useful for searching definitions briefly and getting back to where you were writing code.
-- "ctrl + k + o" - switches between .cpp or .h file
-- "ctrl + j" - can list members or display member information.
-- 
-
+- "CTRL + Minus " - navigates backwards in visual studio. Useful for searching definitions briefly and getting back to where you were writing code.
+- "CTRL + K + O" - switches between .cpp or .h file
+- "CTRL + J" - can list members or display member information.
 
 # C++
 ### Iterators
