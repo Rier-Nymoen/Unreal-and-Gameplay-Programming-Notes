@@ -1,5 +1,5 @@
 # Unreal-and-Gameplay-Programming-Notes
-My personal notes
+My personal notes for C++ Programming, Unreal, Etc.
 
 **Formatting and Content is work-in-progress **
 
