@@ -14,6 +14,7 @@ Will improve formatting as I get a feel for organizational issues.
 
 
 # Programming Lingo
+### definitions for terms
 - ```Context``` - is defined as: all the relevant information that a developer needs to complete a task.
 - ```Statics``` - static helper functions.
 - ```Handles``` not the data itself, but a way to get the data.
