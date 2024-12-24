@@ -57,7 +57,7 @@ for(auto iter = container.begin(); iter !=  container.end(); ++iter)
 ## Input
 - Let objects manage the binding and unbinding of their own input for encapsulation.
   
-# PrematureOptimization
+## PrematureOptimization
 - Premature Optimization is the root of all evil.
 - Keep your code readable, micro performance optimizations don't matter.
 - "Don't blindly optimize, figure out the **What, Why and How**" - Ari Arnbjörnsson in: Maximizing Your Game's Performance in Unreal Engine | Unreal Fest 2022
