@@ -3,8 +3,6 @@ My personal notes for C++ Programming, Unreal, Etc.
 
 ** Formatting and Content is work-in-progress **
 
-
-
 ## Contents
 @TODO update links with aliases to improve style and formatting
 - [C++ Specific](#cpp)
@@ -15,9 +13,9 @@ My personal notes for C++ Programming, Unreal, Etc.
 
 # VisualStudio
 ### Shortcuts
-- (CTRL + Minus ) - navigates backwards in visual studio. Useful for searching definitions briefly and getting back to where you were writing code.
-- (CTRL + K + O) - switches between .cpp or .h file
-- (CTRL + J) - can list members or display member information.
+- **(CTRL + Minus )**- navigates backwards in visual studio. Useful for searching definitions briefly and getting back to where you were writing code.
+- **(CTRL + K + O)** - switches between .cpp or .h file
+- **(CTRL + J)** - can list members or display member information.
 
 # C++
 ### Iterators
