@@ -1,7 +1,5 @@
 # Unreal-and-Gameplay-Programming-Notes
-**A place to jot down knowledge I've gained. I try my best to quote and give credit to people I've learned from who helped "make it (something) click"
-
-Will improve formatting as I get a feel for organizational issues.**
+**A place to jot down knowledge I've gained. I try my best to quote and give credit to people I've learned from who helped "make it (something) click" Will improve formatting as I get a feel for organizational issues.**
 
 ## Contents
 @TODO update links with aliases to improve style and formatting
