@@ -96,7 +96,7 @@ UGameplayCueNotify - can be called from GameplayEffects. GameplayCues are automa
 
 
 ## CharacterMovementComponent
-TickComponent -> Controller Character Move -> Perform Movement -> UpdateCharacterStateBeforeMovement -> Start New Physics -> Update Character State After Movement
+```TickComponent()``` -> ```ControllerCharacterMove()``` -> ```Perform Movement()``` -> ```UpdateCharacterStateBeforeMovement()``` -> ```StartNewPhysics()``` -> ```UpdateCharacterStateAfterMovement()```
 
 ## AI
 
