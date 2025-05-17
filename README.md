@@ -149,4 +149,10 @@ Client to server, Server to client. Primarily for unreliable gameplay events.
 Defines the ruleset of your game.
 - Only exists on the server.
 
+# Unreal Misc
+
+One time I encountered an issue where updating visual studio removed components necessary for UE5.2 to function, resulting in a "Compiler is newer than the vs version" issue. I learned how to read the installation formatting:  MSVC v143 - VS 2022 C++ x64/x86 build tools (v14.38-17.8) Which means MSVC version 14.38, and 17.8 is a VS version. 
+
+If the recommended compiler isnt downloaded, Unreal resorts to the most up-to-date install. Also, the "visual studio" setup page isn't helpful. The actual patch notes (5.2) is where that detailed information is provided clearly. (hopefully)
+
 
